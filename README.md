@@ -11,7 +11,7 @@ In this paper, we introduce HealthVer a new dataset for evidence-based fact-chec
 
 Rank | Team | Precision | Recal | F1 | Accuracy 
 --- | --- | --- | --- |--- |--- 
-Seconds | 301 | 283 | 290 | 286 | 289 
+1 | NLM (T5) | 73.45|73.70|73.54|74.82
 
 
 ## Citation
