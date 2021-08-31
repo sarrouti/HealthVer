@@ -14,7 +14,7 @@ Rank | Team | Precision | Recal | F1 | Accuracy
 1 | NLM (T5) | 80.82|79.00|79.60|80.69
 2 | NLM (SciBERT) | 76.62|78.15|77.21|78.11
 
-If you used HealthVer in your experiements, please send us the obtained results on the test set to one of the listed contacts. 
+If you use HealthVer in your experiements, please send us the obtained results with the team name. 
 
 ## Citation
 
