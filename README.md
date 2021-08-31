@@ -11,7 +11,7 @@ This repository contains source code and the HealthVer dataset presented in the 
 ## Citation
 
 ```bibtex
-@inproceedings{Wadden2020FactOF,
+@inproceedings{Sarrouti2021Healthver,
   title={Evidence-based Fact-Checking of Health-related Claims},
   author={Mourad Sarrouti, Asma Ben Abacha, Yassine Mrabet and Dina Demner-Fushman},
   booktitle={EMNLP},
