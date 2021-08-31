@@ -11,8 +11,9 @@ In this paper, we introduce HealthVer a new dataset for evidence-based fact-chec
 
 Rank | Team | Precision | Recal | F1 | Accuracy 
 --- | --- | --- | --- |--- |--- 
-1 | NLM (T5) | 73.45|73.70|73.54|74.82
-
+1 | NLM (T5) | 80.82|79.00|79.60|80.69
+--- | --- | --- | --- |--- |--- 
+2 | NLM (SciBERT) | 76.62|78.15|77.21|78.11
 
 ## Citation
 
