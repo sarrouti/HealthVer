@@ -9,9 +9,9 @@ In this paper, we introduce HealthVer a new dataset for evidence-based fact-chec
 
 **UPDATE (September 2021)**:
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+Rank | Team | Precision | Recal | F1 | Accuracy 
+--- | --- | --- | --- |--- |--- |--- 
+Seconds | 301 | 283 | 290 | 286 | 289 
 
 ## Citation
 
