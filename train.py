@@ -30,6 +30,7 @@ import os
 from sklearn.utils import shuffle
 
 def train(args):
+    label_to_int = {"Refutes": 0, "Supports": 1, "Neutral": 2} ############ adding this line to avoid TypeError: new(): invalid data type 'str'
     if torch.cuda.is_available():
         device = torch.device("cuda")
     else:
@@ -49,6 +50,7 @@ def train(args):
         ##### total steps
         tokenizer = BertTokenizer.from_pretrained(args.model_spec_b)
         df = pd.read_csv(args.data+"healthver_train.csv")
+        df=df.replace({"label": label_to_int})                      #######################  replacing the str values with int values
         train_data_loader = create_data_loader(df, tokenizer, args.sequence_length_inputs, args.batch_size)
         total_steps = len(train_data_loader) * args.epochs
         print(total_steps)
@@ -67,11 +69,13 @@ def train(args):
         checkpoint=args.checkpoint+args.model_spec_b+"/"
         #WebVer_train_emnlp
         df = pd.read_csv(args.data+"healthver_train.csv")
+        df=df.replace({"label": label_to_int}) ########### replace here as well
         #df = df [:4000] 
         #df = shuffle(df) 
               
         #df.to_csv(args.data+"train_shuffle.csv")
         df_dev = pd.read_csv(args.data+"healthver_dev.csv")
+        df_dev=df_dev.replace({"label": label_to_int})   ############### this as well
         
         logging.info('Creating BERT model...')
         model = BERTClassifier(args.model_spec_b, checkpoint, device)
