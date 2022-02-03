@@ -18,6 +18,7 @@ import numpy as np
 import pandas as pd
 
 def evaluate(args):
+    label_to_int = {"Refutes": 0, "Supports": 1, "Neutral": 2}  ############ adding this line to prevent the same error as in the train.py file
     if torch.cuda.is_available():
         device = torch.device("cuda")
     else:
@@ -43,6 +44,7 @@ def evaluate(args):
 
         checkpoint=args.checkpoint+args.model_spec_b+"/"
         df = pd.read_csv(args.data+"healthver_test.csv")
+        df=df.replace({"label": label_to_int})                          ###############   replace the str values with int values
         logging.info('Creating BERT model...')
         model = BERTClassifier(args.model_spec_b, checkpoint, device)
         tokenizer = BertTokenizer.from_pretrained(args.model_spec_b)
