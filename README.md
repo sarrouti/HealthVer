@@ -16,12 +16,15 @@ Rank | Team | Precision | Recal | F1 | Accuracy
 
 If you use HealthVer in your experiements, please send us the obtained results with the team name. 
 
-## Citation
+
+## License & Citation
+
+- This work is released under the Creative Commons Attribution 4.0 International License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Please cite our paper if you use the HealthVer dataset or code. 
 
 ```bibtex
 @inproceedings{Sarrouti2021Healthver,
   title={Evidence-based Fact-Checking of Health-related Claims},
-  author={Mourad Sarrouti, Asma Ben Abacha, Yassine Mrabet and Dina Demner-Fushman},
+  author={Mourad Sarrouti, Asma {Ben Abacha}, Yassine Mrabet and Dina Demner-Fushman},
   booktitle={EMNLP},
   year={2021},
 }
@@ -29,7 +32,5 @@ If you use HealthVer in your experiements, please send us the obtained results w
 
 ## Contact
 
-- Mourad Sarrouti, `sarrouti.mourad@gmail.com`
-- Asma Ben Abacha, `asma.benabacha@nih.gov`
-- Yassine Mrabet, `yassine.m'rabet@nih.gov`
-- Dina Demner-Fushman, `ddemner@mail.nih.gov`
+- Mourad Sarrouti, `sarrouti.mourad AT gmail.com`
+- Asma Ben Abacha, `abenabacha AT microsoft.com`
